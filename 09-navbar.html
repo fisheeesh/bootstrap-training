@@ -13,14 +13,14 @@
   <h1 class="mb-5">Navbar</h1>
 
   <!-- Simple Navbar -->
-  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
     <div class="container-fluid">
       <a href="#" class="navbar-brand">Navbar</a>
-      <button type="button" data-bs-toggle="collapse" data-bs-target="#navBarNav11" class="navbar-toggler">
+      <button type="button" data-bs-toggle="collapse" data-bs-target="#navBarNav123" class="btn navbar-toggler">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navBarNav11">
+      <div class="collapse navbar-collapse" id="navBarNav123">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a href="#" class="nav-link active">Home</a>
@@ -45,23 +45,22 @@
   <nav class="navbar navbar-expand-md bg-primary navbar-dark">
     <div class="container-fluid">
       <a href="#" class="navbar-brand">NavBar</a>
-      <button type="button" data-bs-toggle="collapse" data-bs-target="#navBarNav1" class="navbar-toggler">
+      <button type="button" data-bs-toggle="collapse" data-bs-target="#navBarNav21" class="navbar-toggler">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class="collapse navbar-collapse" id="navBarNav1">
+      <div class="collapse navbar-collapse" id="navBarNav21">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a href="#" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link active">Home</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">Services</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link active">Contact</a>
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
           </li>
         </ul>
       </div>
@@ -98,29 +97,29 @@
   </nav>
 
   <!-- Form In Navbar -->
-
-  <nav class="navbar navbar-expand-md bg-warning navbar-dark">
+  <nav class="navbar navbar-expand-md bg-success navbar-dark">
     <div class="container-fluid">
-      <a href="#" class="navbar-brand">NavBar</a>
-      <form role="search" class="d-flex">
+      <a href="#" class="navbar-brand">Navbar</a>
+      <form type="search" class="d-flex">
         <input type="text" class="form-control me-2">
-        <button class="btn btn-primary">Search</button>
+        <button class="btn btn-primary">Sea</button>
       </form>
     </div>
   </nav>
+
 
   <br /><br />
 
   <!-- Dropdown Menu -->
   <div class="dropdown">
-    <button type="button" data-bs-toggle="dropdown" class="btn btn-secondary dropdown-toggle">
+    <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
       Dropdown Button
+      <ul class="dropdown-menu">
+        <li><a href="#" class="dropdown-item">Link 1</a></li>
+        <li><a href="#" class="dropdown-item">Link 2</a></li>
+        <li><a href="#" class="dropdown-item">Link 3</a></li>
+      </ul>
     </button>
-    <ul class="dropdown-menu">
-      <li><a href="#" class="dropdown-item">Link 1</a></li>
-      <li><a href="#" class="dropdown-item">Link 2</a></li>
-      <li><a href="#" class="dropdown-item">Link 3</a></li>
-    </ul>
   </div>
 
   <br><br>

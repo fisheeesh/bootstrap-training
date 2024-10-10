@@ -1,46 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <title>Bootstrap Sandbox | Forms & Input</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="mb-5">Forms & Input</h1>
 
-      <!-- Basic Form -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <title>Bootstrap Sandbox | Forms & Input</title>
+</head>
 
-      <br /><br />
+<body>
+  <div class="container">
+    <h1 class="mb-5">Forms & Input</h1>
 
-      <!-- Other Fields -->
-      <form>
-        <!-- Select Fields -->
+    <!-- Basic Form -->
+    <form>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control">
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control">
+      </div>
+      <div class="mb-3">
+        <input type="checkbox" class="form-check-input" id="remember">
+        <label for="remember" class="form-check-label">Remember Me</label>
+      </div>
+      <input type="submit" value="LogIn" class="btn btn-primary">
+    </form>
 
-        <!-- Textarea -->
+    <br /><br />
 
-        <!-- Switch -->
+    <!-- Other Fields -->
+    <form>
+      <!-- Select Fields -->
+      <select class="form-select">
+        <option value="" selected disabled>Choose Role</option>
+        <option value="designer">Designer</option>
+        <option value="developer">Developer</option>
+      </select>
+      <!-- Textarea -->
+      <textarea name="" id="" class="form-control mt-3" placeholder="Message"></textarea>
+      <!-- Switch -->
+      <div class="form-check form-switch">
+        <input type="checkbox" name="" id="" class="form-check-input">
+      </div>
+      <!-- Inline Checkboxes -->
+      <div class="mb-3">
+        <div class="form-check form-check-inline">
+          <input type="checkbox" name="" id="ch1" class="form-check-input">
+          <label for="ch1" class="form-check-label">1</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type="checkbox" name="" id="ch2" class="form-check-input">
+          <label for="ch2" class="form-check-label">2</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type="checkbox" name="" id="ch3" class="form-check-input">
+          <label for="ch3" class="form-check-label">3</label>
+        </div>
+      </div>
 
-        <!-- Inline Checkboxes -->
+      <!-- Toggle Button -->
+      <div class="mb-3">
+        <input type="checkbox" name="" id="btn-check" class="btn-check">
+        <label for="btn-check" class="btn btn-danger">Button</label>
+      </div>
 
-        <!-- Toggle Button -->
+      <!-- Range -->
+      <div class="mb-3">
+        <label for="range" class="form-label">Range</label>
+        <input type="range" name="" id="range" class="form-range">
+      </div>
 
-        <!-- Range -->
+      <!-- Range Steps -->
+      <div class="mb-3">
+        <label for="range" class="form-label">Range Steps</label>
+        <input type="range" name="" id="range" class="form-range" min="0" max="10" step="0.5">
+      </div>
+    </form>
 
-        <!-- Range Steps -->
-      </form>
+    <br /><br />
 
-      <br /><br />
+    <!-- Input Groups -->
+    <form>
+      <div class="input-group mb-3">
+        <span class="input-group-text">@</span>
+        <input type="email" name="" id="" class="form-control">
+      </div>
 
-      <!-- Input Groups -->
-      <form></form>
+      <div class="input-group mb-3">
+        <input type="email" name="" placeholder="name@gmail.com" id="" class="form-control">
+        <button class="btn btn-outline-secondary">Search</button>
+      </div>
+    </form>
 
-      <!-- Don't go past here -->
-    </div>
-    <div style="margin-top: 350px"></div>
 
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <form>
+      <div class="form-check form-check-inline mb-3">
+        <input type="checkbox" class="form-check-input">
+        <label for="" class="form-check-label">Male</label>
+      </div>
+      <div class="form-check form-check-inline mb-3">
+        <input type="checkbox" class="form-check-input">
+        <label for="" class="form-check-label">Male</label>
+      </div>
+    </form>
+
+    <!-- Don't go past here -->
+  </div>
+  <div style="margin-top: 350px"></div>
+
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

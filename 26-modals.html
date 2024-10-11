@@ -1,26 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
 
-    <title>Bootstrap Sandbox | Modal</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="mb-5">Modal</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
 
-      <!-- Modal Button -->
-      <button type="button" class="btn btn-primary">Open Modal</button>
+  <title>Bootstrap Sandbox | Modal</title>
+</head>
 
-      <!-- Modal -->
+<body>
+  <div class="container">
+    <h1 class="mb-5">Modal</h1>
+    <!-- Modal Button -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Open Modal</button>
 
-      <!-- Don't go past here -->
+    <!-- Modal -->
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog mt-5">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title fs-5" id="myModalLabel">
+              Modal Title
+            </div>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam accusamus vel sed minus temporibus,
+            expedita, assumenda, dignissimos similique veniam quibusdam animi excepturi error sunt enim provident
+            voluptates id repellendus! Labore. "editor.defaultFormatter": "esbenp.prettier-vscode", // Ensures Prettier
+            is the default formatter
+            "editor.formatOnSave": true, // Automatically formats on save
+            "prettier.singleQuote": true, // Use single quotes
+            "prettier.jsxSingleQuote": true, // Use single quotes in JSX
+            "prettier.printWidth": 80, // Sets the line length before wrapping
+            "prettier.htmlWhitespaceSensitivity": "ignore", // Allows for flexible whitespace handling
+            "prettier.bracketSameLine": false, // Breaks tag attributes onto new lines
+            "prettier.useTabs": false, // Uses spaces instead of tabs
+            "prettier.tabWidth": 2 // Number of spaces per tab
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button class="btn btn-primary">Save Changes</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div style="margin-top: 350px"></div>
 
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <!-- Don't go past here -->
+  </div>
+  <div style="margin-top: 350px"></div>
+
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

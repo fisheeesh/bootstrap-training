@@ -11,18 +11,24 @@
     <div class="container">
       <h1 class="mb-5">Form Validation Display</h1>
 
-      <form>
+      <form class="need-validation" novalidate>
         <div class="mb-3">
           <label for="username" class="form-label">Username</label>
           <input type="text" class="form-control" id="username" required />
+          <!-- <div class="valid-feedback">Looks Good</div> -->
+          <div class="invalid-feedback">Please Enter A Username</div>
         </div>
         <div class="mb-3">
           <label for="email" class="form-label">Email address</label>
           <input type="email" class="form-control" id="email" required />
+          <div class="valid-feedback">Looks Good</div>
+          <div class="invalid-feedback">Please Enter A Valid Email</div>
         </div>
         <div class="mb-3">
           <label for="city" class="form-label">City</label>
           <input type="text" class="form-control" id="city" required />
+          <div class="valid-feedback">Looks Good</div>
+          <div class="invalid-feedback">Please Enter A Valid City</div>
         </div>
 
         <div class="mb-3">
@@ -37,6 +43,9 @@
             <label class="form-check-label" for="invalidCheck">
               Agree to terms and conditions
             </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
           </div>
         </div>
 
@@ -48,5 +57,15 @@
     <div style="margin-top: 350px"></div>
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/formValidation.js"></script>
+    <!-- <script>
+      const form = document.querySelector('.need-validation')
+      form.addEventListener('submit', (e) => {
+        if(!form.checkValidity()) {
+          e.preventDefault()
+        } else alert('success')
+        form.classList.add('was-validated')
+      })
+    </script> -->
   </body>
 </html>

@@ -1,26 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <title>Bootstrap Sandbox | Accordion & Collapse</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="mb-5">Accordion & Collapse</h1>
 
-      <!-- Accordion -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <title>Bootstrap Sandbox | Accordion & Collapse</title>
+</head>
 
-      <br /><br />
+<body>
+  <div class="container">
+    <h1 class="mb-5">Accordion & Collapse</h1>
 
-      <!-- Collapse -->
+    <!-- Single Accordion Container -->
+    <div id="myAccordion" class="accordion">
+      <!-- Accordion Item 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">Creative Coder မှာ
+            Beginners တွေအတွက် ဘာသင်တန်းတွေရှိလဲ။</button>
+        </h2>
+        <div class="collapse accordion-collapse" id="collapseOne" data-bs-parent="#myAccordion">
+          <div class="accordion-body">
+            Creative Coder မှာ Beginners တွေအတွက်ရည်ရွယ်ပြီးဖွင်လှစ်ထားတဲ့ Web Developement Foundation, Programming With
+            Javascript, Python From Scratch အတန်းတွေရှိပါတယ်ခင်ဗျ။Web Development Foundation အတန်းအတွက်
+            သင်တန်းကြေးလေးကတော့ ၂၅၀၀၀၀ ပါ။အကယ်၍ Early Bird အပ်ခဲ့ရင်တော့ သင်တန်းကြေးက ၂၀၀၀၀၀ နဲ့ရပါမယ်ခင်ဗျ။
+          </div>
+        </div>
+      </div>
 
-      <!-- Don't go past here -->
+      <!-- Accordion Item 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">PHP, Laravel
+            အတန်းတက်ဖို့အတွက် ဘာတွေရထားဖို့လိုမလဲ။</button>
+        </h2>
+        <div class="collapse accordion-collapse" id="collapseTwo" data-bs-parent="#myAccordion">
+          <div class="accordion-body">
+            👩‍💻 PHP, Laravel အတန်းအတွက် HTML,CSS နဲ့ Design ရေးတတ်ဖို့လိုပါမယ်ဗျ။PHP, Laravel အတန်းမှာ Design
+            ကိုအဓိကထားရေးပြမှာမဟုတ်ဘဲ PHP, Laravel ရဲ့ Concept တွေကိုအဓိကထားသင်သွားပေးမှာကြောင့်ဘဲဖြစ်ပါတယ်။
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion Item 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseThree">React, Vue
+            အတန်းတက်ဖို့အတွက် ဘာတွေရထားဖို့လိုမလဲ။</button>
+        </h2>
+        <div class="collapse accordion-collapse" id="collapseThree" data-bs-parent="#myAccordion">
+          <div class="accordion-body">
+            👩‍💻 React, Vue အတန်းတက်ဖို့အတွက် Html, CSS တို့ကိုရထားဖို့လိုပါမယ်ခင်ဗျ။
+          </div>
+        </div>
+      </div>
     </div>
-    <div style="margin-top: 350px"></div>
 
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <br /><br />
+
+    <!-- Collapse -->
+    <div class="my-3">
+      <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#myCollapse">
+        Toggle Collapse
+      </button>
+    </div>
+    <div class="collapse" id="myCollapse">
+      <div class="card">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium porro beatae magni delectus odit nam
+          placeat cum sit vitae aliquid at eius, maiores sequi, numquam repellat et provident laboriosam.
+        </div>
+      </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="accordion" id="myAccordion1">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#myCollapse11">Web Development
+            ကိုအခြေခံကနေစပြီးလုပ်ငန်းခွင်ဝင်နိုင်တဲ့အထိသွားမယ်ဆိုရင် အချိန်ဘယ်လောက်ကြာနိုင်မလဲ။</button>
+        </h2>
+        <div class="collapse accordion-collapse" id="myCollapse11" data-bs-parent="#myAccordion1">
+          <div class="accordion-body">
+            Web Development ကိုအခြေခံကနေစပြီးလုပ်ငန်းခွင်ဝင်နိုင်တဲ့အထိသွားမယ်ဆိုရင် မိမိလေ့လာမှုပေါ်မူတည်ပြီး ၈လကနေ
+            ၁နှစ်အထိကြာနိုင်ပါတယ်။Full Stack Developer Roadmap ကို Creative Coder Website
+            မှာလည်းဝင်ရောက်ကြည့်ရှုနိုင်ပါတယ် 💁‍♂️။
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#myCollapse12">သင်တန်းပြီးရင်
+            Certificate ပေးတာမျိုးရှိလား။</button>
+        </h2>
+        <div class="collapse accordion-collapse" id="myCollapse12" data-bs-parent="#myAccordion1">
+          <div class="accordion-body">
+            သင်တန်းပြီးသွားတဲ့အခါ Certificate လျှောက်လို့ရပါတယ်ဗျ။လျှောက်တဲ့နေရာမှာ ကိုယ်ရေးထားတဲ့ Project ရဲ့ Link
+            ကိုထည့်ပေးရပါမယ်ဗျ။ အဲ့ဒါမှ စစ်ပြီး ပေးလို့ရမှာပါခင်ဗျာ။အပြင်တန်း နဲ့ zoom အတန်းတွေမှာလည်း
+            သင်တန်းပြီးသွားတဲ့အခါ Certificate ပေးပါတယ်ခင်ဗျာ: 💁‍♂️။
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+
+    <div class="my-3">
+      <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#myTarget">Toggle Collapse</button>
+    </div>
+    <div class="collapse" id="myTarget">
+      <div class="card">
+        <div class="card-body">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis sapiente iusto reprehenderit cum qui earum,
+          error veniam impedit quaerat placeat ut quos, quibusdam praesentium architecto nihil. Debitis accusamus vel
+          distinctio.
+        </div>
+      </div>
+    </div>
+
+    <!-- Don't go past here -->
+  </div>
+  <div style="margin-top: 350px"></div>
+
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

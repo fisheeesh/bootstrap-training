@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+  <title>Bootstrap Sandbox | Toggle Dark Mode</title>
+</head>
+
+<body data-bs-theme="light"> <!-- Default theme is light -->
+  <div class="container">
+    <h1 class="mb-5">Toggle Dark Mode</h1>
+
+    <div class="card" style="width: 18rem">
+      <div class="card-header">This is a card</div>
+      <div class="card-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+        voluptas.
+      </div>
+    </div>
+
+    <!-- Toggle Button -->
+    <button class="btn  mt-3" id="themeToggle">
+      <i id="themeIcon" class="bi bi-moon"></i> 
+    </button>
+    <!-- Don't go past here -->
+  </div>
+
+  <div style="margin-top: 350px"></div>
+
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Select the button and icon
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const body = document.body;
+
+    // Function to toggle the theme and change the icon
+    function toggleTheme() {
+      const currentTheme = body.getAttribute('data-bs-theme');
+
+      // If currently light, switch to dark
+      if (currentTheme === 'light') {
+        body.setAttribute('data-bs-theme', 'dark');
+        themeIcon.classList.replace('bi-moon', 'bi-sun');
+        themeToggle.classList.replace('btn-dark', 'btn-light');
+      }
+      // If currently dark, switch to light
+      else {
+        body.setAttribute('data-bs-theme', 'light');
+        themeIcon.classList.replace('bi-sun', 'bi-moon');
+        themeToggle.classList.replace('btn-light', 'btn-dark');
+      }
+    }
+
+    // Add event listener for the button click
+    themeToggle.addEventListener('click', toggleTheme);
+  </script>
+</body>
+
+</html>

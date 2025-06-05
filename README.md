@@ -5,7 +5,7 @@
 - [Ebook Website](https://ebook-website-black-nine.vercel.app/)
 - [Corso Training Website](https://carso-website-syp.netlify.app/)
 - [Portfolio Website](https://fissheeesh.netlify.app/)
-- [Yavin Office Design Website](https://bootstrapfromscratch.com/yavin-website)
+- [Yavin Office Design Website](https://yavin-syp.netlify.app/)
 - [Vera Software Solutions Website](https://vera-website-syp.netlify.app/)
 
 ## Usage
